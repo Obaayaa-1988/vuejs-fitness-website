@@ -1,53 +1,24 @@
 <template>
   <div class="hello">
     <h1>{{ greeting }}</h1>
+    <nav class="navbar">
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+          <li>Contact</li>
+      </ul>
+
+
+    </nav>
     <p>Beautiful World</p>
     <h1>Hellloooooooo</h1>
-    <img :src="require('@/assets/logo.png')" />
+    <div class="image-block">
+      <img :src="require('@/assets/logo.png')" />
+    </div>
+    
 
     
-    <div class="row">
-      <!-- <div class="column">
-        <img alt="Vue logo" src="./assets/logo.png">
-        <img alt="Vue logo" src="./assets/logo.png">
-        <img alt="Vue logo" src="./assets/logo.png">
-        <img alt="Vue logo" src="./assets/logo.png">
-        <img alt="Vue logo" src="./assets/logo.png">
-        <img alt="Vue logo" src="./assets/logo.png">
-
-      </div>
-
-      <div class="column">
-        <img alt="Vue logo" src="./assets/logo.png">
-        <img alt="Vue logo" src="./assets/logo.png">
-        <img alt="Vue logo" src="./assets/logo.png">
-        <img alt="Vue logo" src="./assets/logo.png">
-        <img alt="Vue logo" src="./assets/logo.png">
-        <img alt="Vue logo" src="./assets/logo.png">
-
-      </div>
-
-      <div class="column">
-        <img alt="Vue logo" src="./assets/logo.png">
-        <img alt="Vue logo" src="./assets/logo.png">
-        <img alt="Vue logo" src="./assets/logo.png">
-        <img alt="Vue logo" src="./assets/logo.png">
-        <img alt="Vue logo" src="./assets/logo.png">
-        <img alt="Vue logo" src="./assets/logo.png">
-
-      </div>
-
-      <div class="column">
-        <img alt="Vue logo" src="./assets/logo.png">
-        <img alt="Vue logo" src="./assets/logo.png">
-        <img alt="Vue logo" src="./assets/logo.png">
-        <img alt="Vue logo" src="./assets/logo.png">
-        <img alt="Vue logo" src="./assets/logo.png">
-        <img alt="Vue logo" src="./assets/logo.png">
-
-      </div> -->
-
-    </div>
+    
     </div>
 </template>
 
@@ -62,20 +33,19 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  display: inline-block;
+  margin: 0 10px;
 }
 
-.column {
-  flex: 50%;
-  padding: 0 4px;
+.image-block{
+  margin-left: 50px;
+  margin-top: 60px;
 }
 
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-}
 
 </style>
