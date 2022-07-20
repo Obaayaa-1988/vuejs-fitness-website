@@ -7,14 +7,15 @@
       </div>
 
       <CardComponent />
-      <!-- <Landing />
-      <Footer /> -->
+      <LandingComponent />
+      <!-- <FooterComponent /> -->
     </div>
   </div>
 </template>
 
 <script>
 import CardComponent from "../components/CardComponent.vue";
+import LandingComponent from "../components/LandingComponent.vue";
 
 export default {
   name: "HomeCurrent",
@@ -23,6 +24,7 @@ export default {
   },
   components: {
     CardComponent,
+    LandingComponent,
   },
 };
 </script>
