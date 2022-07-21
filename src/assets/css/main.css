@@ -99,7 +99,7 @@ nav a {
 }
 
 .card-container img {
-    width: 28rem;
+    width: 33rem;
     height: 37rem;
     object-fit: cover;
     object-position: 50% 50%;
@@ -197,19 +197,6 @@ nav a {
 .card-container .btn3 {
     background-color: rgb(29, 228, 128);
 }
-
-
-/*Styling the landing page*/
-/*
-.landing-image{
-  background-image: url(/src/images/image5.jpg);
-  height: 70vh;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  
-}*/
 
 
 .land-image img {
@@ -342,9 +329,6 @@ nav a {
 .offer-cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-
-    /* grid-template-rows: 1fr 1fr;
-  grid-gap: 10px;  */
 }
 
 .offer-images img {
@@ -385,7 +369,7 @@ nav a {
 .offer-online {
     background-color: white;
     box-shadow: 5px 5px 15px rgba(141, 140, 140, 0.9);
-    /* border-left: 20px solid purple; */
+
 }
 
 .offer-online2 {
@@ -414,7 +398,7 @@ nav a {
 }
 
 .outer-form2 {
-    width: 42rem;
+    width: 50rem;
     height: 30rem;
     background-color: black;
 
@@ -454,7 +438,6 @@ nav a {
 .outer-form2 button {
     padding: 1rem 2.1rem;
     background-color: rgb(196, 29, 99);
-    ;
     color: #ffffff;
     font-size: 1.1rem;
     outline: none;
@@ -470,7 +453,7 @@ nav a {
 
 
 .mass-image img {
-    width: 42rem;
+    width: 50rem;
     height: 30rem;
     object-fit: cover;
     object-position: 50% 50%;
@@ -671,7 +654,7 @@ h1 {
     bottom: 0;
     width: 100%;
     left: 0;
-    top: 400px;
+    top: 450px;
 
 }
 
@@ -738,13 +721,6 @@ h1 {
     font-size: 1rem;
     margin-left: 7rem;
 }
-
-/* .break-ideas h3{
-  padding: 0.8rem 3rem;
-  border: 2px solid black;
-  width: 20%;
-
-} */
 
 .break-ideas img {
     width: 25rem;
@@ -981,11 +957,6 @@ form textarea {
 
 }
 
-/* .form-showcase{
-  background-color:red;
-  height: 400px;
-} */
-
 .form-flex {
     display: flex;
     padding-top: 5rem;
@@ -1036,7 +1007,7 @@ form textarea {
 }
 
 .side-social i {
-    font-size: 3rem;
+    font-size: 5rem;
 
 }
 

@@ -2,7 +2,7 @@
   <div>
     <div class="landing-about">
       <div class="land-image">
-        <img src="../assets/images/image12.jpg" />
+        <img src="../assets/images/image7.png" />
       </div>
 
       <div class="land-about">
@@ -92,7 +92,7 @@
 
     <div class="body-workout">
       <div class="mass-image">
-        <img src="../assets/images/image14.jpg" />
+        <img src="../assets/images/image18.jpg" />
       </div>
 
       <div class="outer-form2">

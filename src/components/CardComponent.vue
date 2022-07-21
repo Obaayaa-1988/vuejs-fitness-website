@@ -13,7 +13,7 @@
             <button class="btn">Find Out More</button>
           </div>
         </div>
-        <img src="../assets/images/image11.jpg" />
+        <img src="../assets/images/image3.jpg" />
       </div>
 
       <div class="card-image2">
@@ -28,7 +28,7 @@
             <button class="btn2">Find Out More</button>
           </div>
         </div>
-        <img src="../assets/images/image17.jpg" />
+        <img src="../assets/images/image4.jpg" />
       </div>
 
       <div class="card-image3">
@@ -43,7 +43,7 @@
             <button class="btn3">Find Out More</button>
           </div>
         </div>
-        <img src="../assets/images/image14.jpg" />
+        <img src="../assets/images/image2.jpg" />
       </div>
     </div>
   </div>

@@ -16,6 +16,7 @@
 <script>
 import CardComponent from "../components/CardComponent.vue";
 import LandingComponent from "../components/LandingComponent.vue";
+// import FooterComponent from "../components/FooterComponent.vue";
 
 export default {
   name: "HomeCurrent",
@@ -25,6 +26,7 @@ export default {
   components: {
     CardComponent,
     LandingComponent,
+    // FooterComponent,
   },
 };
 </script>

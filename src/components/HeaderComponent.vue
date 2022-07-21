@@ -6,13 +6,19 @@
     <nav>
       <ul>
         <li>
-          <router-link to="/">Home</router-link>
+          <router-link to="/">HOME</router-link>
         </li>
         <li>
-          <router-link to="/Wears">Gym Wear</router-link>
+          <router-link to="/Wears">GYM WEAR</router-link>
         </li>
         <li>
-          <router-link to="/Meals">Meal Plan</router-link>
+          <router-link to="/Meals">MEAL PLAN</router-link>
+        </li>
+        <li>
+          <router-link to="/Contact">CONTACT</router-link>
+        </li>
+        <li>
+          <router-link to="/Equipment">GYM EQUIPMENT</router-link>
         </li>
       </ul>
     </nav>
