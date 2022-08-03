@@ -503,7 +503,7 @@ nav a {
     height: 90.1vh;
     width: 100%;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -540,6 +540,9 @@ nav a {
 
 .outfit-grid {
     margin-left: 2rem;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr; */
 }
 
 .outfit-grid img {
@@ -582,7 +585,7 @@ nav a {
 }
 
 .wear-linear {
-    height: 30rem;
+    height: 29rem;
     width: 50%;
     background: #8E2DE2;
     background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);
@@ -595,8 +598,8 @@ nav a {
 
 
 .display-image img {
-    width: 100%;
-    height: 30rem;
+    width: 115%;
+    height: 29rem;
     object-fit: cover;
     object-position: 50% 50%;
 
