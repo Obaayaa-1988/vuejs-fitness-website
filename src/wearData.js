@@ -2,7 +2,7 @@ const wears = [
     {
         "name": " Combo",
         "price": " $130",
-        "image": "/",
+        "image": "../img/image8.jpg",
         "number": 1
 
     },
@@ -10,7 +10,7 @@ const wears = [
     {
         "name": " Nude Inspire",
         "price": " $70",
-        "image": './img/image11.jpg',
+        "image": '../img/image11.jpg',
         "number": 2
 
     },
@@ -44,7 +44,7 @@ const wears = [
         "name": " Triple Card",
         "price": " $180",
         "image": '../img/image16.jpg',
-        "number": 5
+        "number": 6
 
     }
 

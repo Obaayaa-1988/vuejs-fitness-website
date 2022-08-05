@@ -20,36 +20,20 @@
         </div>
 
         <div class="outfit-grid">
-          <ul>
-            <li v-for="(latest, index) in latestWear" :key="index">
+            <span v-for="(latest, index) in latestWear" :key="index">
               <div class="outfit-image1">
                 <img :src="`${latest.image}`" />
                 <p>{{ latest.name }} {{ latest.price }}</p>
                 <button>Add to Cart</button>
               </div>
-            </li>
-          </ul>
+            </span>
+          
         </div>
+        
       </div>
     </div>
 
-    <!-- <div class="outfit-showcase">
-      <div class="container">
-        <div class="outfit-text">
-          <h1>New Arrivals</h1>
-        </div>
-
-        <div class="outfit-grid">
-          <div class="outfit-image1">
-            <img src="{latestWear.image}" />
-            <p>{{ latestWear.name }}{{ wear.price }}</p>
-            <button onClick="{increaseCount}">
-              Add to Cart <span>{count}</span>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div> -->
+  
 
     <div class="wear-display">
       <div class="wear-linear">
@@ -66,7 +50,7 @@
 </template>
 
 <script>
-import getWears from "../services/wearData.js";
+import getWears from "../wearData.js";
 export default {
   name: "WearsComponent",
   computed: {
