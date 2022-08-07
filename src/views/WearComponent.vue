@@ -20,6 +20,7 @@
         </div>
 
         <div class="outfit-grid">
+           
             <span v-for="(latest, index) in latestWear" :key="index">
               <div class="outfit-image1">
                 <img :src="`${latest.image}`" />
@@ -27,7 +28,7 @@
                 <button>Add to Cart</button>
               </div>
             </span>
-          
+        
         </div>
         
       </div>

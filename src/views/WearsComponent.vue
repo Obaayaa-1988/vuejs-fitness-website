@@ -19,7 +19,9 @@
           <h1>New Arrivals</h1>
         </div>
 
+        
         <div class="outfit-grid">
+          
             <span v-for="(latest, index) in latestWear" :key="index">
               <div class="outfit-image1">
                 <img :src="`${latest.image}`" />
@@ -29,6 +31,7 @@
             </span>
           
         </div>
+        
         
       </div>
     </div>
