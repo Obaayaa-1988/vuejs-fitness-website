@@ -14,6 +14,6 @@ const routes = [
     },
     { path: '/Wears', name: "wears", component: WearsComponent },
     { path: '/Meals', name: "meals", component: MealComponent },
-    { path: '/Contact', name: "meals", component: ContactComponent },
+    { path: '/Contact', name: "contact", component: ContactComponent },
 ]
 export default routes;
