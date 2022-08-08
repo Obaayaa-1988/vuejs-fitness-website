@@ -11,9 +11,7 @@
         <li>
           <router-link to="/Wears">GYM WEAR</router-link>
         </li>
-        <!-- <li>
-          <router-link to="/Wears/:WearId">GYM WEAR</router-link>
-        </li> -->
+        
         <li>
           <router-link to="/Meals">MEAL PLAN</router-link>
         </li>

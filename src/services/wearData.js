@@ -3,7 +3,7 @@ const wears = [
         "name": " Combo",
         "price": " $130",
         "image": require("../assets/images/image8.jpg"),
-        "number": 1
+        "number": 10000000000000
 
     },
 
@@ -56,7 +56,7 @@ const wears = [
 
 export default wears
 
-// export function getWear(number){
-//     return wears.find((wear) => wear.number === number)
-// }
+export function singleWear(number){
+    return wears.find((wear) => wear.number === number)
+}
 

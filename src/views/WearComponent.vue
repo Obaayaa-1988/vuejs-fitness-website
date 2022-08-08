@@ -1,50 +1,26 @@
 <template>
   <div>
-    <div class="gym-showcase">
-      <div class="gym-image1">
-        <h1>SUMMER 2022 COLLECTION</h1>
-        <p>Get Your Body Excited</p>
-        <button>Shop Now</button>
+    <div class="container">
+      <div class="outfit-image">
+        <!-- <div>{{ previewCurrentImage }}</div> -->
+        <img :src="previewCurrentImage.image" alt="an img here" />
+        <p>
+          {{ previewCurrentImage.name }}
+          {{ previewCurrentImage.price }}
+        </p>
       </div>
 
-      <div class="gym-image1">
-        <img src="../assets/images/image13.jpg" alt="gym attire" />
-      </div>
-    </div>
+      <div class="outfit-grid">
+        <div v-for="(latest, index) in latestWear" :key="index">
+          <div class="outfit-image1">
+            <router-link :to="`/Wears/${latest.number}`">
+              <img :src="`${latest.image}`" />
+            </router-link>
 
-    <!-- <div>{{ latestWear }}</div> -->
-    <div class="outfit-showcase">
-      <div class="container">
-        <div class="outfit-text">
-          <h1>New Arrivals</h1>
+            <p>{{ latest.name }} {{ latest.price }}</p>
+            <button>Add to Cart</button>
+          </div>
         </div>
-
-        <div class="outfit-grid">
-           
-            <span v-for="(latest, index) in latestWear" :key="index">
-              <div class="outfit-image1">
-                <img :src="`${latest.image}`" />
-                <p>{{ latest.name }} {{ latest.price }}</p>
-                <button>Add to Cart</button>
-              </div>
-            </span>
-        
-        </div>
-        
-      </div>
-    </div>
-
-  
-
-    <div class="wear-display">
-      <div class="wear-linear">
-        <h2>SALE IS ON</h2>
-        <h1>30% OFF</h1>
-        <button>BUY NOW</button>
-      </div>
-
-      <div class="display-image">
-        <img src="../assets/images/pic5.jpg" alt="gym wear" />
       </div>
     </div>
   </div>
@@ -52,16 +28,29 @@
 
 <script>
 import getWears from "../services/wearData.js";
+import { singleWear } from "../services/wearData.js";
 export default {
-  name: "WearsComponent",
+  name: "WearComponent",
   computed: {
     latestWear() {
       return getWears;
+    },
+
+    getCurrentWearId() {
+      return this.$route.params.id;
+    },
+    // previewCurrentImage() {
+    //   return this.latestWear.find(
+    //     (item) => item.number === Number(this.getCurrentWearId)
+    //   );
+    // },
+    previewCurrentImage() {
+      return singleWear(parseInt(this.getCurrentWearId));
     },
   },
 };
 </script>
 
 <style>
-/* @import "./style/wear.css"; */
+@import "./style/wear.css";
 </style>

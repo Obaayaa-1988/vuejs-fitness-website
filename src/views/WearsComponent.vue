@@ -9,6 +9,7 @@
       </div>
 
       <div class="gym-image1">
+
         <img
           src="../assets/images/image13.jpg"
           alt="gym attire"
@@ -27,7 +28,11 @@
         <div class="outfit-grid">
           <div v-for="(latest, index) in latestWear" :key="index">
             <div class="outfit-image1">
-              <img :src="`${latest.image}`" />
+
+              <router-link :to="`/Wears/${latest.number}`">
+                <img :src="`${latest.image}`" />
+              </router-link>
+
               <p>{{ latest.name }} {{ latest.price }}</p>
               <button>Add to Cart</button>
             </div>
@@ -58,6 +63,7 @@ export default {
   computed: {
     latestWear() {
       return getWears;
+  
     },
   
   },

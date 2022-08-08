@@ -1,5 +1,6 @@
 import HomeCurrent from '../views/HomeCurrent.vue'
 import WearsComponent from '../views/WearsComponent.vue'
+import WearComponent from '../views/WearComponent.vue'
 import MealComponent from '../views/MealComponent.vue'
 import ContactComponent from '../views/ContactComponent.vue'
 const routes = [
@@ -13,6 +14,7 @@ const routes = [
         // ]
     },
     { path: '/Wears', name: "wears", component: WearsComponent },
+    { path: '/Wears/:id', name: "singleWear", component: WearComponent },
     { path: '/Meals', name: "meals", component: MealComponent },
     { path: '/Contact', name: "contact", component: ContactComponent },
 ]
