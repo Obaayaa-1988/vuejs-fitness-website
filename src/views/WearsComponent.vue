@@ -2,13 +2,18 @@
   <div>
     <div class="gym-showcase">
       <div class="gym-image1">
+        
         <h1>SUMMER 2022 COLLECTION</h1>
         <p>Get Your Body Excited</p>
         <button>Shop Now</button>
       </div>
 
       <div class="gym-image1">
-        <img src="../assets/images/image13.jpg" alt="gym attire" />
+        <img
+          src="../assets/images/image13.jpg"
+          alt="gym attire"
+         
+        />
       </div>
     </div>
 
@@ -19,24 +24,17 @@
           <h1>New Arrivals</h1>
         </div>
 
-        
         <div class="outfit-grid">
-          
-            <span v-for="(latest, index) in latestWear" :key="index">
-              <div class="outfit-image1">
-                <img :src="`${latest.image}`" />
-                <p>{{ latest.name }} {{ latest.price }}</p>
-                <button>Add to Cart</button>
-              </div>
-            </span>
-          
+          <div v-for="(latest, index) in latestWear" :key="index">
+            <div class="outfit-image1">
+              <img :src="`${latest.image}`" />
+              <p>{{ latest.name }} {{ latest.price }}</p>
+              <button>Add to Cart</button>
+            </div>
+          </div>
         </div>
-        
-        
       </div>
     </div>
-
-  
 
     <div class="wear-display">
       <div class="wear-linear">
@@ -53,13 +51,15 @@
 </template>
 
 <script>
-import getWears from "../wearData.js";
+import getWears from "../services/wearData.js";
+
 export default {
   name: "WearsComponent",
   computed: {
     latestWear() {
       return getWears;
     },
+  
   },
 };
 </script>
