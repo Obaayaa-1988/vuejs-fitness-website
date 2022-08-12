@@ -37,13 +37,9 @@ export default {
     },
 
     getCurrentWearId() {
-      return this.$route.params.id;
+      return this.$route.params.id; //this is the route of the element provided by vue/dom
     },
-    // previewCurrentImage() {
-    //   return this.latestWear.find(
-    //     (item) => item.number === Number(this.getCurrentWearId)
-    //   );
-    // },
+    
     previewCurrentImage() {
       return singleWear(parseInt(this.getCurrentWearId));
     },

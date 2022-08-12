@@ -60,6 +60,7 @@ import getWears from "../services/wearData.js";
 
 export default {
   name: "WearsComponent",
+  
   computed: {
     latestWear() {
       return getWears;
